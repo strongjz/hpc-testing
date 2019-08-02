@@ -1,0 +1,8 @@
+[
+    {
+      "Classification": "mapred-site",
+      "Properties": {
+        "mapreduce.application.classpath": "hdfs:///hpc-var-cap/jars/*"
+      }
+    }
+  ]
