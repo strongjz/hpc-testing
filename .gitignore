@@ -3,3 +3,4 @@
 .idea
 data/series_10M.txt
 data/series_100M.txt
+*.out

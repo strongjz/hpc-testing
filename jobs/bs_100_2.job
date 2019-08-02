@@ -1,0 +1,13 @@
+#!/bin/bash
+
+start=`date +%s`
+
+runtime=$((end-start))
+mpirun -np 8 /fsx/bscholes_mpi_2.out /fsx/series/series_100M.txt
+
+bash /fsx/percent.sh -f /fsx/my_output.txt -p .05 > /fsx/bs.job.output
+end=`date +%s`
+runtime=$((end-start))
+
+echo "Run time: $runtime"
+
